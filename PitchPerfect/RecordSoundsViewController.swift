@@ -12,14 +12,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     var audioRecorder:AVAudioRecorder!
     var timer = NSTimer()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
     override func viewWillAppear(animated: Bool) {
         stopRecordingButton.enabled = false
         recordingDurationLabel.text = "0.0"
